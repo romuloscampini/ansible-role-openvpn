@@ -1,7 +1,7 @@
 client
 
 proto {{openvpn_proto}}
-remote {{ansible_default_ipv4.interface}} {{openvpn_port}}
+remote {{ansible_default_ipv4.address}} {{openvpn_port}}
 dev tun
 resolv-retry {{ openvpn_resolv_retry }}
 nobind
