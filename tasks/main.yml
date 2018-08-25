@@ -18,6 +18,11 @@
   tags:
     - uninstall
 
+- name: Security Rules
+  include_tasks: security.yml
+  tags:
+    - security
+
 - name: Install OpenVPN
   include_tasks: install.yml
   tags:
