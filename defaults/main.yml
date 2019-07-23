@@ -28,12 +28,19 @@ openvpn_push: []
 manage_firewall_rules: true
 iptables_service: iptables
 openvpn_client_register_dns: true
+openvpn_custom_dns: false
+openvpn_dns_servers: []
 openvpn_use_crl: false
 openvpn_duplicate_cn: false
 openvpn_status_version: 1
 openvpn_resolv_retry: 5
 openvpn_client_to_client: false
 openvpn_masquerade_not_snat: false
+openvpn_addl_server_options: []
+openvpn_addl_client_options: []
+openvpn_compression: lzo
+openvpn_auth_alg: SHA256
+openvpn_tun_mtu:
 
 # Used in firewalld
 firewalld_default_interface_zone: public
